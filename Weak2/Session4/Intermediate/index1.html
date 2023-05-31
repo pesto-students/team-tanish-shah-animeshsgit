@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>Social Network</title>
+    <style>
+        /* Internal styling to align the form widgets */
+        .row {
+            display: flex;
+            flex-direction: row;
+            width: 60%;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<!-- JOIN A SOCIAL NETWORKING WEBSITE -->
+
+<body>
+    <!-- Heading of the webpage -->
+    <h1>Join a social network</h1>
+    <div>
+        <!-- Below is the form which collects data from user and send it to backend -->
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div class="row">
+                <!-- Input widget for name -->
+                <label class="column" for="Name">Full name:</label>
+                <input class="column" type="text" id="fullName" name="Name" placeholder="Enter full name" required>
+            </div>
+            <div class="row">
+                <!-- Input widget for email -->
+                <label class="column" for="email">Email address:</label>
+                <input class="column" type="email" id="email" name="email" placeholder="Enter your email Id"
+                    required>
+            </div>
+            <div class="row">
+                <!-- Input widget to provide about you info -->
+                <label class="column" for="textarea">About you:</label>
+                <textarea class="column" name="textarea" id="about" cols="50" rows="3"
+                    placeholder="Give a short discription about yourself..."></textarea>
+            </div>
+            <div class="row">
+                <!-- Widget to upload the photo -->
+                <label class="column" for="photo">Photo:</label>
+                <input class="column" type="file" id="picture" name="photo"></input>
+            </div>
+            <div>
+                <input type="submit">
+                <!-- Above is the button to submit the form, and below is the alternate way in commented block -->
+                <!-- <button type="submit">Submit</button> -->
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
