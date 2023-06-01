@@ -3,17 +3,9 @@
 <head>
     <title>Social Network</title>
     <style>
-        /* Internal styling to align the form widgets */
-        .row {
-            display: flex;
-            flex-direction: row;
-            width: 60%;
-        }
-
-        .column {
-            display: flex;
-            flex-direction: column;
-            flex: 1;
+        label{
+            display: inline-block;
+            width: 100px;
             margin-bottom: 10px;
         }
     </style>
@@ -26,27 +18,27 @@
     <div>
         <!-- Below is the form which collects data from user and send it to backend -->
         <form action="#" method="post" enctype="multipart/form-data">
-            <div class="row">
+            <div>
                 <!-- Input widget for name -->
-                <label class="column" for="Name">Full name:</label>
-                <input class="column" type="text" id="fullName" name="Name" placeholder="Enter full name" required>
+                <label for="Name">Full name:</label>
+                <input type="text" id="fullName" name="Name" placeholder="Enter full name" required>
             </div>
-            <div class="row">
+            <div>
                 <!-- Input widget for email -->
-                <label class="column" for="email">Email address:</label>
-                <input class="column" type="email" id="email" name="email" placeholder="Enter your email Id"
+                <label for="email">Email address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email Id"
                     required>
             </div>
-            <div class="row">
+            <div>
                 <!-- Input widget to provide about you info -->
-                <label class="column" for="textarea">About you:</label>
-                <textarea class="column" name="textarea" id="about" cols="50" rows="3"
+                <label for="textarea">About you:</label>
+                <textarea name="textarea" id="about" cols="50" rows="3"
                     placeholder="Give a short discription about yourself..."></textarea>
             </div>
-            <div class="row">
+            <div>
                 <!-- Widget to upload the photo -->
-                <label class="column" for="photo">Photo:</label>
-                <input class="column" type="file" id="picture" name="photo"></input>
+                <label for="photo">Photo:</label>
+                <input type="file" id="picture" name="photo"></input>
             </div>
             <div>
                 <input type="submit">
