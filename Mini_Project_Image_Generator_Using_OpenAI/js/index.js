@@ -1,6 +1,5 @@
 
 let url = "https://api.openai.com/v1/images/generations";
-let apiKey = "OPEN_AI_API_KEY";
 
 let imgGen = document.getElementById("imgGen");
 let loading = document.getElementById("loadingCircle");
@@ -14,7 +13,7 @@ input.addEventListener("keypress", function (event) {
     }
 });
 
-function generateImg(text) {
+function generateImg(text, key) {
     imgGen.innerHTML = "";
     if (text == null || text == "") {
         alert("Enter a value")
@@ -22,13 +21,13 @@ function generateImg(text) {
     }
     else if (!(text == null) || !(text == "")) {
         loading.classList.remove("loadingSection");
-        let resp = callAPI(text);
+        let resp = callAPI(text, key);
         resp.then((respo) => {
             let b = "";
             for (let i = 0; i < respo.length; i++) {
                 b += "<div class='container2_2' > <img class='imgCont' src = '" + respo[i].url + "'> </div>"
             }
-        console.log(b);
+            console.log(b);
             loading.classList.add("loadingSection");
             imgGen.innerHTML = b;
             footerpos.classList.remove("footerPosition")
@@ -39,14 +38,15 @@ function generateImg(text) {
 function clearImg() {
     imgGen.innerHTML = "";
     footerpos.classList.add("footerPosition")
+    document.getElementById('inputKey').value = "";
     document.getElementById('inputText').value = "";
 }
 
-async function callAPI(text) {
+async function callAPI(text, apiKey) {
     let ask = {
         "prompt": text,
         "n": 5,
-        size : "256x256"
+        size: "256x256"
     }
 
     const res = await fetch(url, {

@@ -15,11 +15,14 @@
 
     <!-- Below section contains input bar and buttons(Generate and clear) -->
     <section class="container1">
-        <input class="container1_1 container1_2" type="text" id="inputText"
-            placeholder="&nbsp;Enter what you wanna generate...">
-        <button class="container1_1 container1_3" onclick="generateImg(document.getElementById('inputText').value)"
-            id="genBtn">Generate</button>
-        <button class="container1_1 container1_3" onclick="clearImg()">Clear</button>
+        <input class="container1_1 container1_2" type="text" id="inputText" placeholder="&nbsp;Enter what you wanna generate...">
+        <input class="container1_1 container1_2" type="text" id="inputKey" placeholder="&nbsp;Enter the OpenAI key">
+        <div class="buttonCont">
+            <button class="container1_1 container1_3"
+                onclick="generateImg(document.getElementById('inputText').value, document.getElementById('inputKey').value)"
+                id="genBtn">Generate</button>
+            <button class="container1_1 container1_3" onclick="clearImg()">Clear</button>
+        </div>
     </section>
 
     <!-- Below section contains the page loading status -->
