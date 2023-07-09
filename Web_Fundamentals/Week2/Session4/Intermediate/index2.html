@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <title>Social Network</title>
+    <style>
+        label{
+            display: inline-block;
+            width: 150px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<!-- Happy Birthday Message Creater WEBSITE -->
+
+<body>
+    <!-- Heading of the webpage -->
+    <h1>Happy Birthday Message Creater</h1>
+    <div>
+        <!-- Below is the form which collects data from user and send it to backend -->
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div>
+                <!-- Input widget for message -->
+                <label for="message">Message?</label>
+                <input type="text" id="message" name="message" placeholder="Enter birthday message">
+            </div>
+            <div>
+                <!-- Input widget for email -->
+                <label for="email">Email address:</label>
+                <input type="email" id="email" name="email" placeholder="name@domain.com" pattern="[a-zA-Z0-9._\-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*">
+            </div>
+            <div>
+                <!-- Input widget Date -->
+                <label for="date">Date to send?</label>
+                <input type="date" id="date" name="date">
+            </div>
+            <div>
+                <!-- Widget for color -->
+                <label for="color">Message color?</label>
+                <input type="color" id="color" name="color">
+            </div>
+            <div>
+                <!-- Input widget for number of blinks-->
+                <label for="color">Number of blinks?</label>
+                <input type="number" id="color" name="color" min="0" max="10" value="0">
+            </div>
+            <div>
+                <!-- Input widget for music volumes-->
+                <label for="volume">Music volume?</label>
+                <input type="range" id="volume" name="volume" min="0" max="50" value="20">
+            </div>
+            <div>
+                <!-- button to submit the form-->
+                <button type="submit">Send birthday message</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

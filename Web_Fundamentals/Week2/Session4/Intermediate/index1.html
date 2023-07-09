@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>Social Network</title>
+    <style>
+        label{
+            display: inline-block;
+            width: 100px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<!-- JOIN A SOCIAL NETWORKING WEBSITE -->
+
+<body>
+    <!-- Heading of the webpage -->
+    <h1>Join a social network</h1>
+    <div>
+        <!-- Below is the form which collects data from user and send it to backend -->
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div>
+                <!-- Input widget for name -->
+                <label for="Name">Full name:</label>
+                <input type="text" id="fullName" name="Name" placeholder="Enter full name" required>
+            </div>
+            <div>
+                <!-- Input widget for email -->
+                <label for="email">Email address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email Id"
+                    required>
+            </div>
+            <div>
+                <!-- Input widget to provide about you info -->
+                <label for="textarea">About you:</label>
+                <textarea name="textarea" id="about" cols="50" rows="3"
+                    placeholder="Give a short discription about yourself..."></textarea>
+            </div>
+            <div>
+                <!-- Widget to upload the photo -->
+                <label for="photo">Photo:</label>
+                <input type="file" id="picture" name="photo"></input>
+            </div>
+            <div>
+                <input type="submit">
+                <!-- Above is the button to submit the form, and below is the alternate way in commented block -->
+                <!-- <button type="submit">Submit</button> -->
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

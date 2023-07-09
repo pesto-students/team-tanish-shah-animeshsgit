@@ -1,0 +1,50 @@
+/* Your code goes here */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: larger;
+    height: 30px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.offer {
+    margin-left: 0;
+    width: 49%;
+    border: 1px solid;
+    display: inline-block;
+}
+
+.offerTitle {
+    background-color: aqua;
+    color: aliceblue;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+
+table {
+    background-color: bisque;
+    border-collapse: separate;
+    border-spacing: 0 2px;
+    margin: auto;
+}
+
+
+tr {
+    background-color: white;
+    height: 30px;
+}
+
+.finalValue {
+    color: blueviolet;
+}

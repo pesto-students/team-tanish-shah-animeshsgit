@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Generetaor</title>
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>OpenAI Powered Image Generator</h1>
+    </header>
+
+    <!-- Below section contains input bar and buttons(Generate and clear) -->
+    <section class="container1">
+        <input class="container1_1 container1_2" type="text" id="inputText" placeholder="&nbsp;Enter what you wanna generate...">
+        <input class="container1_1 container1_2" type="text" id="inputKey" placeholder="&nbsp;Enter the OpenAI key">
+        <div class="buttonCont">
+            <button class="container1_1 container1_3"
+                onclick="generateImg(document.getElementById('inputText').value, document.getElementById('inputKey').value)"
+                id="genBtn">Generate</button>
+            <button class="container1_1 container1_3" onclick="clearImg()">Clear</button>
+        </div>
+    </section>
+
+    <!-- Below section contains the page loading status -->
+    <section class="loadingSection" id="loadingCircle">
+        <div class="loadingCircle">
+            <img class="loadImg" src="./style/Assets/load.png" alt="">
+            <h2>Loading...</h2>
+        </div>
+    </section>
+
+    <!-- This section is responsible for displaying the images -->
+    <section>
+        <div class="imgPortion" id="imgGen"></div>
+    </section>
+
+    <!-- This section is responsible for displaying the footer -->
+    <footer class="footerPosition" id="footerPosition">
+        <h2>Created with 💛 by Animesh Raj</h2>
+    </footer>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
