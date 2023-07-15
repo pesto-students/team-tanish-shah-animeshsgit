@@ -1,8 +1,8 @@
-console.log(duplicate("5 2 3 2 5 1"))
+console.log(duplicate("5 2 3 2 5")); //3
+console.log(duplicate("-1 -1 -2 -2 -3")); //-3
 
 function duplicate(value){
     let str = value.split(' ');
-    console.log(str);
     const occurance = new Map;
     for(let i=0; i<str.length; i++){
         if(occurance.has(str[i])){
@@ -18,6 +18,5 @@ function duplicate(value){
             non_duplicate.push(key)
         }
     }
-    console.log(occurance);
      return non_duplicate;
 }
