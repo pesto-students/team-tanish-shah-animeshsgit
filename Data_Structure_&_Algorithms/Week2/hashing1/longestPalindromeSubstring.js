@@ -33,3 +33,5 @@ function checkPalindromic(str) {
 
     return str.slice(start, start + maxLength);
   }
+
+  // TC is O(n)

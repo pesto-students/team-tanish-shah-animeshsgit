@@ -17,3 +17,5 @@ function stringPermutations(str, n) {
         stringPermutations(remaining, n + ch);
     }
 }
+
+// TC is O(n)

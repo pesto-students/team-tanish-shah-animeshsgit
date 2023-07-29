@@ -12,3 +12,5 @@ function indexOccurrence(arr, n){
     if(n === arr.length){return -1 ;}
     return indexOccurrence(arr, n+1);
 }
+
+// TC is O(n)

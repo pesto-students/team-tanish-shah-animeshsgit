@@ -15,3 +15,5 @@ function sumRecursion(arr){
 
     return recur(arr, n);
 }
+
+// TC is O(n)

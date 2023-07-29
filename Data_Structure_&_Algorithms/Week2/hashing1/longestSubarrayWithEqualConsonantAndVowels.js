@@ -38,3 +38,5 @@ function longestSubArray(str) {
     }
     return maxLen;
 }
+
+// TC is O(n)

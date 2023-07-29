@@ -9,3 +9,5 @@ function stringReversal(str, n){
     if(n == len-1){ return str[n] }
     return stringReversal(str, n+1) + str[n];
 }
+
+// TC is O(n)
