@@ -18,7 +18,6 @@ root.left.left = new Node(2)
 root.left.right = new Node(4)
 
 root.left.left.left = new Node(1)
-// root.right.right = new Node(7)
 
 let k = 3;
 kSmallest(root, k); // 3
@@ -32,7 +31,6 @@ function kSmallest(node, k){
         arr.push(node.value);
         driver(node.right, arr)
     }
-    console.log(arr);
     console.log(arr[k-1]);
 }
 

@@ -42,3 +42,6 @@ function isAncestor(node, n1, n2){
 
         return (left_lca != null) ? left_lca : right_lca;
 }
+
+
+// TC is O(n)

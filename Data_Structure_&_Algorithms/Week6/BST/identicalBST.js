@@ -58,3 +58,5 @@ function isBSTIdentical(node, node1){
     isBSTIdentical(node.left, node1.left)
     isBSTIdentical(node.right, node1.right)
 }
+
+// TC is O(n)

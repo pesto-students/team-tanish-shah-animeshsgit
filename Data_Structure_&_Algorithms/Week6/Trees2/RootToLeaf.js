@@ -49,3 +49,5 @@ function preOrder(node, current){
         preOrder(node.right, current);
     }
 }
+
+// TC is O(n)

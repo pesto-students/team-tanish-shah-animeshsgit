@@ -77,3 +77,4 @@ function LOT(root){
 
 }
 
+// TC is O(n)
