@@ -6,10 +6,10 @@ const books = [
     { title: 'Book 3', author: 'Author 3', year: 2022 },
   ];
 
-  function Books2(){
+  function ExpandedBooks(){
     let data = books.map((book) => EachBook(book));
 
     return <div> <ul>{data}</ul> </div>
   }
 
-  export default Books2;
+  export default ExpandedBooks;

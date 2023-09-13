@@ -1,13 +1,13 @@
-import Books from "./Component/BookList";
-import Books2 from "./Component/BookList2";
+import TabularBooks from "./Component/TabularBookList";
+import ExpandedBooks from "./Component/ExpandedBookList";
 
 function App() {
   return (
     <div>
       <h1>Assignment first part</h1>
-      <Books/>
+      <TabularBooks/>
       <h1>Assignment second part</h1>
-      <Books2/>
+      <ExpandedBooks/>
     </div>
   );
 }
