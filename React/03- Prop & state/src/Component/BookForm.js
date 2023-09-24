@@ -14,7 +14,9 @@ function BookForm(props) {
         let data = {
             title : title,
             author : author,
-            year : new Date(date).getFullYear()
+            year : new Date(date).getFullYear(),
+            description : '',
+            genre : ''
         }
         console.log(data )
         props.setBooks((books) => [...books, data])

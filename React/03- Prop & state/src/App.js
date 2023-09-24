@@ -10,10 +10,10 @@ function App() {
   ]);
   return (
     <div>
-      {console.log("App.js")}
-      {console.log(books)}
+      {/* {console.log("App.js")} */}
+      {/* {console.log(books)} */}
       <BookForm setBooks={setBooks} /> 
-      {console.log(books)}
+      {/* {console.log(books)} */}
       <h1>Assignment second part</h1>
       <ExpandedBooks items={books} setBooks={setBooks}/>
     </div>

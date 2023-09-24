@@ -13,7 +13,7 @@ function EachBook(individualBook, allBooks) {
     }
 
     function handleToggle() {
-        return setDetails(!details);
+        setDetails(!details);
     }
 
     return <div key={individualBook.title} >
