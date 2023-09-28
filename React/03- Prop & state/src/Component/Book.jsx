@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import '../index.css'
 
-function EachBook(individualBook, allBooks) {
+function EachBook({ individualBook, allBooks }) {
     const [details, setDetails] = useState(false);
 
     function handleDelete() {
@@ -20,11 +20,14 @@ function EachBook(individualBook, allBooks) {
         <h3 className="title" >{individualBook.title}</h3>
         <p>Author: {individualBook.author}</p>
         <p>Year: {individualBook.year}</p>
-        {details && <div> <p> Description: {individualBook.description}</p>
-            <p>Genre: {individualBook.genre} </p> </div>}
+        {details && <div>
+            <p> Description: {individualBook.description}</p>
+            <p>Genre: {individualBook.genre} </p>
+        </div>
+        }
         {console.log(details)}
         <button onClick={handleToggle} >{details ? 'Hide Details' : 'Show Details'}</button>
-        <br/>
+        <br />
         <button onClick={handleDelete}>Delete</button>
     </div>
 }

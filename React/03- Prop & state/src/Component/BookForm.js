@@ -9,18 +9,18 @@ function BookForm(props) {
     const handleTitleChange = (e) => { setTitle(e.target.value) }
     const handleAuthorChange = (e) => { setAuthor(e.target.value) }
     const handleDateChange = (e) => { setDate(e.target.value) }
-    const handleSubmit = (e) => { 
+    const handleSubmit = (e) => {
         e.preventDefault();
         let data = {
-            title : title,
-            author : author,
-            year : new Date(date).getFullYear(),
-            description : '',
-            genre : ''
+            title: title,
+            author: author,
+            year: new Date(date).getFullYear(),
+            description: '',
+            genre: ''
         }
-        console.log(data )
+        console.log(data)
         props.setBooks((books) => [...books, data])
-        console.log("hd  agsaux ah sx k" )
+        console.log("hd  agsaux ah sx k")
     }
 
     return <div>
