@@ -9,8 +9,6 @@ const useBookSort = (books, sortBy) => {
     } else {
       return [...books].sort((a, b) => b.votes - a.votes);
     }
-
-    // return books;
   },[books, sortBy])
 
   return setBooks;

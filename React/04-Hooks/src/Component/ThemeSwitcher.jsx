@@ -1,21 +1,15 @@
-import { useState, createContext, useContext } from "react";
+import { createContext, useState } from "react";
 
-const ThemeContext = createContext();
+export const ThemeContext = createContext({ theme: "light", toggle: () => {} });
 
-const useTheme = () => {
-    const context = useContext(ThemeSwitcher);
-    return context;
-};
-
-// function ThemeSwitcher({children}) {
-const ThemeSwitcher = ({ children }) => {
-    const [theme, setTheme] = useState(true);
-
-    const toggleTheme = (prevTheme) => { setTheme(!prevTheme) }
-
-    return <ThemeContext.Provider value={{ theme, toggleTheme }}>
-        {children}
+export const ThemeProvider = ({ children }) => {
+  const [theme, setTheme] = useState(true);
+  const toggleTheme = () => {
+    setTheme(() => !theme);
+  };
+  return (
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      {children}
     </ThemeContext.Provider>
-}
-
-export { useTheme, ThemeSwitcher };
+  );
+};
