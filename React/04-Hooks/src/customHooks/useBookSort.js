@@ -5,12 +5,12 @@ const useBookSort = (books, sortBy) => {
     if (!sortBy) return books;
 
     if (sortBy === "asc") {
-      books.sort((a, b) => a.votes - b.votes);
+      return [...books].sort((a, b) => a.votes - b.votes);
     } else {
-      books.sort((a, b) => b.votes - a.votes);
+      return [...books].sort((a, b) => b.votes - a.votes);
     }
 
-    return books;
+    // return books;
   },[books, sortBy])
 
   return setBooks;
