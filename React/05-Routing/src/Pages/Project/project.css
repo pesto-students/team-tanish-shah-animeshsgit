@@ -1,0 +1,23 @@
+
+.headTitle{
+    font-weight: bolder;
+    margin-top: 20Px;
+    display: flex;
+    justify-content: center;
+}
+
+.headDescription{
+    margin-top: 10Px;
+    display: flex;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
