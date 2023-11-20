@@ -1,0 +1,55 @@
+
+// Sample data{
+//     ------------------------------------
+//         actors
+// Robert Downey Jr Id A01
+//     American
+// movies M01, M02
+
+// Chris Evans id A02
+//     American
+// movies id M01, M03
+
+// Chris Hemsworth id A03
+//     Australian
+// movies id M01
+
+// Scarlett Johansson id A04
+//     American
+// movies id M01, M02, M03
+
+//     directors
+// Joss Whedon ID D01
+//     American
+//     M01
+
+// Jon Favreau id D02
+//     American
+//     M02
+
+// Anthony Russo id D03
+//     American
+//     M03
+
+//     movies
+// The Avengers ID M01
+//     2012
+//     fiction
+// director D01
+//     actor - A01, A02, A03, A04
+//     8
+
+// Iron Man 2 id M02
+//     2010
+//     fiction
+// director D02
+//     actor - A01, A04
+//     7
+
+// Captain America: The Winter Soldier id M03
+//     2014
+//     fiction
+// director D03
+//     actor - A01, A04
+//     8
+// }
